@@ -1,0 +1,12 @@
+<div>
+  {{datasource.adapter.packageInfo.consumer.name}}
+  v{{datasource.adapter.packageInfo.consumer.version}}
+</div>
+
+<div class="viewport">
+  <div *uiScroll="let item of datasource; let even = even">
+    <div class="item" [class.even]="even">
+      {{item.text}}
+    </div>
+  </div>
+</div>
